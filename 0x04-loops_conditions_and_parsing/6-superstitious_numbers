@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+i=1
+while [ $i -le 10 ]; do
+        echo "Best School"
+        ((i++))
+done
+root@bcc639dcfacd:/alx-system_engineering-devops/0x04-loops_conditions_and_parsing# cat 6-superstitious_numbers 
+#!/usr/bin/env bash
+# This script displays numbers from 1 to 20 and displays "bad luck from China"
+# for the 4th iteration, "bad luck from Japan" for the 9th iteration and
+# "bad luck from Italy" for the 17th iteration.
+
+i=1
+while [ $i -le 20 ]; do
+        echo $i
+
+        case $i in
+        4) echo "bad luck from China" ;;
+        9) echo "bad luck from Japan" ;;
+        17) echo "bad luck from Italy" ;;
+        esac
+
+        ((i++))
+done

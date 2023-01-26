@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script displays the visitor IP along with the
+# HTTP status code from the Apache log file
+
+file="./apache-access.log"
+awk '{print $1,$9}' $file
+root@bcc639dcfacd:/alx-system_engineering-devops/0x04-loops_conditions_and_parsing# cat 2-while_best_school 
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+i=1
+while [ $i -le 10 ]; do
+        echo "Best School"
+        ((i++))
+done
